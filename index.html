@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<title>晴山御花園 RICH GARDEN｜崗石電梯豪墅 霧峰正市心｜全新落成</title>
+<meta name="description" content="霧峰正市心，崗石電梯豪墅，全新落成。林家花園特區，霧峰核心，望族風水。歷時三年整合，林家後代謙讓，薪火相傳寶地。" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  /* ============================================
+     RESET & BASE
+  ============================================ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --c-red-deep: #8B0F18;
+    --c-red: #A6131C;
+    --c-gold: #C9A968;
+    --c-gold-light: #E8D9A8;
+    --c-cream: #F4EDE0;
+    --c-bg: #1a0a0c;
+    --c-ink: #1F1410;
+    --c-form-bg: #4A4A4A;
+    --c-submit: #C42832;
+    --font-en: 'Cormorant Garamond', 'Noto Serif TC', serif;
+    --font-zh: 'Noto Serif TC', 'Cormorant Garamond', serif;
+    --col-w: 520px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-zh);
+    color: var(--c-cream);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+  input, textarea, select { font-family: inherit; font-size: inherit; color: inherit; }
+
+  /* ============================================
+     FULL-WIDTH BACKGROUND HOSTS (desktop only)
+     The page background is a near-solid red sampled
+     directly from main-cover.jpg with only a faint
+     top/bottom vignette for atmosphere. Because the
+     red is essentially uniform, the side margins
+     stay visually identical to the EDM strip at
+     EVERY scroll position and EVERY zoom level —
+     no seam, no dividing line, ever.
+  ============================================ */
+  body {
+    background-color: #A6131C;
+    background-image:
+      linear-gradient(180deg,
+        rgba(0,0,0,0.18) 0%,
+        rgba(0,0,0,0)   18%,
+        rgba(0,0,0,0)   82%,
+        rgba(0,0,0,0.22) 100%
+      );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .scene {
+    position: relative;
+    width: 100%;
+  }
+  /* Subtle peony / floral watermark behind the strip on desktop,
+     using the gold floral motif from the EDM, made very low-opacity.
+     Pushed further out to the edges so they never create a darker
+     band right next to the centered strip. */
+  .scene::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(ellipse 900px 1100px at 2% 22%, rgba(201,169,104,0.05) 0%, transparent 65%),
+      radial-gradient(ellipse 900px 1100px at 98% 70%, rgba(201,169,104,0.05) 0%, transparent 65%);
+    z-index: 0;
+  }
+  .scene .scene-inner {
+    position: relative;
+    z-index: 2;
+    max-width: var(--col-w);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* film grain overlay — subtle texture across the whole page */
+  body::after {
+    content: '';
+    position: fixed; inset: 0; pointer-events: none; z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.6 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+  }
+
+  /* ============================================
+     STICKY TOP BAR
+  ============================================ */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(20, 7, 10, 0.78);
+    border-bottom: 1px solid rgba(201, 169, 104, 0.16);
+  }
+  .topbar-in {
+    max-width: 1280px; margin: 0 auto;
+    padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px;
+  }
+  .brand { display: flex; align-items: baseline; gap: 12px; }
+  .brand .zh {
+    font-family: var(--font-zh); font-weight: 600;
+    font-size: 18px; color: var(--c-cream); letter-spacing: 0.2em;
+  }
+  .brand .en {
+    font-family: var(--font-en);
+    font-size: 11px; color: var(--c-gold);
+    letter-spacing: 0.45em; text-transform: uppercase;
+  }
+  .top-meta { display: flex; align-items: center; gap: 14px; font-size: 13px; }
+  .top-meta .addr {
+    color: rgba(244,237,224,0.7);
+    letter-spacing: 0.18em;
+    font-size: 12px;
+  }
+  .top-meta .dot { color: rgba(201,169,104,0.4); }
+  .top-meta a.tel {
+    color: var(--c-gold); font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: color .3s; font-size: 14px;
+  }
+  .top-meta a.tel:hover { color: var(--c-gold-light); }
+
+  /* ============================================
+     EDM STRIP (centered)
+     No box-shadow, no own background — the body
+     gradient bleeds through, so there is no visible
+     edge between the strip and the side area.
+  ============================================ */
+  .strip {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: transparent;
+  }
+  .strip-pad-top    { padding-top: 50px; }
+  .strip-pad-bottom { padding-bottom: 50px; }
+
+  .block {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    line-height: 0;
+  }
+  .block + .block { margin-top: 0; }
+  .block > img.edm { width: 100%; height: auto; display: block; }
+
+  /* ============================================
+     OVERLAY CAROUSEL
+  ============================================ */
+  .ov {
+    position: absolute;
+    overflow: hidden;
+    background: #000;
+  }
+  .ov-vibrant   { top: 58.56%; bottom: 0;      left: 0;    right: 0;    }
+  .ov-crafted   { top: 46.55%; bottom: 0;      left: 0;    right: 0;    }
+  .ov-timeless  { top: 63.10%; bottom: 0;      left: 0;    right: 0;    }
+  .ov-elevated  { top: 58.06%; bottom: 4.62%;  left: 6%;   right: 6.14%; }
+  .ov-building  { top: 0;      bottom: 53.67%; left: 0;    right: 0;    }
+
+  .ov-track { position: relative; width: 100%; height: 100%; }
+  .ov-slide {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    transition: opacity 1.2s ease, visibility 1.2s ease, transform 2.2s ease-out;
+    transform: scale(1.04);
+  }
+  .ov-slide.active { opacity: 1; visibility: visible; transform: scale(1); }
+  .ov-slide img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+  .ov-nav {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.85);
+    color: #444;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 5;
+    transition: all .3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    opacity: 0;
+  }
+  .ov:hover .ov-nav { opacity: 1; }
+  .ov-nav:hover { background: var(--c-gold); color: #1a1a1a; }
+  .ov-nav.prev { left: 8px; }
+  .ov-nav.next { right: 8px; }
+  .ov-nav svg { width: 16px; height: 16px; }
+
+  .ov-dots {
+    position: absolute;
+    bottom: 8px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: 6px;
+    z-index: 4;
+  }
+  .ov-dots span {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    transition: all .35s ease;
+  }
+  .ov-dots span.active { background: #fff; width: 20px; border-radius: 4px; }
+
+  /* ============================================
+     STAGE — wraps the centered strip with side
+     ornaments ONLY ON DESKTOP for fullbleed feel
+  ============================================ */
+  .stage {
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px 30px;
+  }
+  .stage-grid {
+    max-width: 1480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr var(--col-w) 1fr;
+    column-gap: 0;
+    align-items: start;
+  }
+  .stage-grid > .strip { grid-column: 2; }
+
+  /* ============================================
+     CONTACT FORM SECTION (real interactive form)
+  ============================================ */
+  .form-section {
+    background: var(--c-form-bg);
+    padding: 70px 20px 60px;
+    position: relative;
+    z-index: 2;
+  }
+  .form-section .form-wrap {
+    max-width: var(--col-w);
+    margin: 0 auto;
+    color: #fff;
+  }
+  .form-section .form-head {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .form-section .form-head h3 {
+    font-family: var(--font-zh); font-weight: 500;
+    font-size: 26px; letter-spacing: 0.36em;
+    color: #fff;
+    margin-bottom: 6px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+  }
+  .form-section .form-head .sub {
+    margin-top: 12px;
+    font-family: var(--font-en); font-style: italic;
+    font-size: 13px; letter-spacing: 0.4em;
+    color: var(--c-gold-light);
+    text-transform: uppercase;
+  }
+
+  .form-field { margin-bottom: 18px; }
+  .form-field label {
+    display: block;
+    font-size: 14px; letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 8px;
+  }
+  .form-field label .req { color: var(--c-submit); margin-left: 4px; font-weight: 700; }
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    background: #fff;
+    color: #333;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 11px 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: outline .2s;
+    border-radius: 0;
+  }
+  .form-field input:focus,
+  .form-field textarea:focus {
+    outline: 2px solid var(--c-submit);
+    outline-offset: 1px;
+  }
+  .form-field textarea { resize: vertical; min-height: 96px; }
+
+  .form-error {
+    color: #ffb3b8;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-top: 6px;
+    min-height: 18px;
+  }
+
+  .form-agree {
+    margin: 18px 0 4px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px; letter-spacing: 0.08em;
+    line-height: 1.85;
+  }
+  .form-agree label.cb {
+    display: flex; align-items: flex-start; gap: 10px;
+    cursor: pointer; margin-bottom: 14px;
+    font-size: 14px;
+  }
+  .form-agree input[type=checkbox] {
+    appearance: none;
+    width: 16px; height: 16px;
+    border: 1.5px solid rgba(255,255,255,0.6);
+    background: transparent; cursor: pointer;
+    margin-top: 4px; flex-shrink: 0;
+    transition: all .2s;
+  }
+  .form-agree input[type=checkbox]:checked {
+    background: var(--c-submit); border-color: var(--c-submit);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M5.5 11L2 7.5l1-1L5.5 9l7-7 1 1z'/%3E%3C/svg%3E");
+    background-position: center; background-repeat: no-repeat; background-size: 12px;
+  }
+  .form-agree p {
+    margin: 4px 0; font-size: 12.5px;
+    color: rgba(255,255,255,0.7);
+  }
+  .form-agree p.priv { margin-top: 8px; }
+  .form-agree a.privacy-link {
+    color: var(--c-gold-light);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .form-agree a.privacy-link:hover { color: var(--c-gold); }
+
+  .form-submit {
+    display: block;
+    margin: 26px auto 0;
+    background: var(--c-submit);
+    color: #fff;
+    padding: 13px 64px;
+    font-family: var(--font-zh);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    transition: all .3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    min-width: 200px;
+  }
+  .form-submit:hover:not(:disabled) {
+    background: #d6353f;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px -8px rgba(196,40,50,0.55);
+  }
+  .form-submit:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  /* ============================================
+     ACTIONS + MAP
+  ============================================ */
+  .actions {
+    display: flex; gap: 14px; justify-content: center;
+    padding: 36px 20px 22px;
+    flex-wrap: wrap;
+    background: var(--c-form-bg);
+  }
+  .action-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 12px 36px;
+    background: #1f1f1f;
+    color: #fff;
+    font-family: var(--font-zh); font-weight: 500;
+    font-size: 15px; letter-spacing: 0.25em;
+    transition: all .3s ease;
+    min-width: 180px;
+    border: 1px solid #2a2a2a;
+  }
+  .action-btn:hover {
+    background: var(--c-gold);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px -6px rgba(201,169,104,0.4);
+  }
+  .action-btn svg { width: 16px; height: 16px; }
+
+  .map-band {
+    background: var(--c-form-bg);
+    padding: 0 20px 56px;
+  }
+  .map-wrap {
+    max-width: var(--col-w);
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 12px 30px -8px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background: #ccc;
+  }
+  .map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+  /* ============================================
+     FOOTER
+  ============================================ */
+  .site-footer {
+    position: relative; z-index: 2;
+    text-align: center;
+    padding: 32px 20px 30px;
+    background: #14070a;
+    color: rgba(244,237,224,0.5);
+    font-size: 12px; letter-spacing: 0.22em;
+    line-height: 1.9;
+  }
+  .site-footer .gold {
+    color: var(--c-gold);
+    font-family: var(--font-en);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+  }
+
+  /* MOBILE FLOATING CTA */
+  .mobile-cta {
+    position: fixed;
+    bottom: 14px; left: 14px; right: 14px;
+    z-index: 60;
+    display: none;
+    background: linear-gradient(135deg, var(--c-gold), #d8b870, var(--c-gold));
+    color: var(--c-ink);
+    padding: 14px 18px;
+    text-align: center;
+    font-family: var(--font-zh);
+    font-weight: 600; font-size: 15px;
+    letter-spacing: 0.25em;
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.6), 0 4px 12px rgba(201,169,104,0.4);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+  }
+  .mobile-cta:active { transform: scale(0.98); }
+  .mobile-cta .ph {
+    font-family: var(--font-en);
+    font-weight: 700; letter-spacing: 0.05em;
+  }
+
+  /* ============================================
+     MODAL (privacy + thank-you)
+  ============================================ */
+  .modal {
+    position: fixed; inset: 0;
+    background: rgba(8,4,5,0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 200;
+    display: none;
+    align-items: center; justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .modal.open {
+    display: flex;
+    opacity: 1;
+  }
+  .modal-card {
+    background: #fff;
+    color: #2a2a2a;
+    width: 100%;
+    max-width: 600px;
+    max-height: 88vh;
+    overflow-y: auto;
+    padding: 36px 32px 30px;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform .35s ease;
+  }
+  .modal.open .modal-card {
+    transform: translateY(0);
+  }
+  .modal-close {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    color: #555;
+    display: flex; align-items: center; justify-content: center;
+    transition: all .25s;
+  }
+  .modal-close:hover {
+    background: var(--c-submit); color: #fff;
+    transform: rotate(90deg);
+  }
+  .modal-close svg { width: 16px; height: 16px; }
+
+  .modal-card h3 {
+    font-family: var(--font-zh);
+    font-weight: 600; font-size: 22px;
+    letter-spacing: 0.2em;
+    color: #2a2a2a;
+    margin-bottom: 6px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eee;
+  }
+  .modal-card .modal-eyebrow {
+    font-family: var(--font-en);
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--c-submit);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .modal-card h4 {
+    font-size: 16px; font-weight: 600;
+    margin: 18px 0 8px;
+    color: #2a2a2a;
+    letter-spacing: 0.1em;
+  }
+  .modal-card p,
+  .modal-card li {
+    font-size: 14px;
+    line-height: 1.85;
+    color: #4a4a4a;
+    letter-spacing: 0.04em;
+  }
+  .modal-card p + p { margin-top: 10px; }
+  .modal-card ol, .modal-card ul {
+    padding-left: 22px;
+    margin: 8px 0;
+  }
+  .modal-card li { margin-bottom: 6px; }
+
+  .modal-card .modal-actions {
+    margin-top: 24px;
+    text-align: center;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+  }
+  .modal-card .modal-btn {
+    background: var(--c-submit);
+    color: #fff;
+    padding: 11px 36px;
+    font-family: var(--font-zh);
+    font-weight: 600; font-size: 15px;
+    letter-spacing: 0.3em;
+    transition: all .3s;
+  }
+  .modal-card .modal-btn:hover {
+    background: #d6353f;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px -6px rgba(196,40,50,0.4);
+  }
+
+  /* Thank-you specific styling */
+  .modal.thanks .modal-card { text-align: center; padding: 50px 36px 40px; }
+  .modal.thanks .check-icon {
+    width: 76px; height: 76px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2eb872, #44d68a);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    box-shadow: 0 12px 30px -8px rgba(46,184,114,0.4);
+    animation: pop .5s ease-out;
+  }
+  @keyframes pop {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  .modal.thanks .check-icon svg { width: 38px; height: 38px; }
+  .modal.thanks h3 {
+    font-size: 24px;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  .modal.thanks .thanks-msg {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: 0.08em;
+    margin-bottom: 22px;
+  }
+  .modal.thanks .thanks-tel {
+    font-family: var(--font-en);
+    font-weight: 600;
+    color: var(--c-submit);
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin-top: 12px;
+  }
+  .modal.thanks .thanks-tel small {
+    display: block;
+    font-family: var(--font-zh);
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    margin-bottom: 4px;
+  }
+
+  /* ============================================
+     RESPONSIVE
+  ============================================ */
+  @media (max-width: 1180px) {
+    .stage-grid {
+      grid-template-columns: 1fr var(--col-w) 1fr;
+    }
+  }
+
+  @media (max-width: 960px) {
+    :root { --col-w: 100%; }
+    .stage { padding: 16px 8px 16px; }
+    .stage-grid {
+      grid-template-columns: 1fr;
+      max-width: 520px;
+    }
+    .stage-grid > .strip { grid-column: 1; }
+    .scene .bg { background-attachment: scroll; }
+    .topbar-in { padding: 12px 16px; flex-wrap: wrap; gap: 6px; }
+    .top-meta .addr, .top-meta .dot { display: none; }
+    .brand .zh { font-size: 16px; }
+    .brand .en { font-size: 10px; }
+    .form-section { padding: 50px 16px 50px; }
+    .form-section .form-head h3 { font-size: 22px; }
+    .map-band { padding: 0 16px 40px; }
+    .mobile-cta { display: block; }
+    body { padding-bottom: 70px; }
+    .actions { padding: 24px 14px 16px; }
+    .action-btn { min-width: 140px; padding: 10px 24px; font-size: 14px; }
+    .ov-nav { width: 32px; height: 32px; }
+    .modal-card { padding: 28px 22px 22px; max-height: 90vh; }
+    .modal-card h3 { font-size: 19px; }
+  }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; }
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .scene .bg { background-attachment: scroll; }
+  }
+
+  /* sr-only utility */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ============= STICKY TOP BAR ============= -->
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="zh">晴山御花園</span>
+      <span class="en">Rich Garden</span>
+    </div>
+    <div class="top-meta">
+      <span class="addr">霧峰區民生路 60 號</span>
+      <span class="dot">|</span>
+      <a href="tel:0423306888" class="tel">04-2330-6888</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============= FULL-WIDTH SCENE: EDM SITS CENTERED ============= -->
+<section class="scene">
+  <div class="stage">
+    <div class="stage-grid">
+
+      <!-- ============= MAIN EDM STRIP ============= -->
+      <div class="strip reveal">
+
+        <article class="block">
+          <img class="edm" src="images/main-cover.jpg" alt="晴山御花園 RICH GARDEN — 崗石電梯豪墅 霧峰正市心 全新落成" loading="eager" />
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-02.jpg" alt="LOCATION 世界歸心，傳承世襲首選 — 區位地圖" loading="lazy" />
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-03.jpg" alt="VIBRANT CORE 繁華之心，稀有值得擁有" loading="lazy" />
+          <div class="ov ov-vibrant" data-autoplay="4500" aria-label="周邊地標輪播">
+            <div class="ov-track">
+              <div class="ov-slide active"><img src="images/yanong-03-1.jpg" alt="霧峰林家花園"/></div>
+              <div class="ov-slide"><img src="images/yanong-03-2.jpg" alt="朝陽科技大學"/></div>
+              <div class="ov-slide"><img src="images/yanong-03-3.jpg" alt="亞洲大學"/></div>
+              <div class="ov-slide"><img src="images/yanong-03-4.jpg" alt="亞洲現代美術館"/></div>
+              <div class="ov-slide"><img src="images/yanong-03-5.jpg" alt="中正路商圈"/></div>
+            </div>
+            <button class="ov-nav prev" aria-label="上一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="ov-nav next" aria-label="下一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="ov-dots"></div>
+          </div>
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-04.jpg" alt="The Majestic Stone Estates — 霧峰市心 崗石豪墅 璀璨誕生" loading="lazy" />
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-05.jpg" alt="CRAFTED STONE 霧峰世家在崗石豪邸下道榮光" loading="lazy" />
+          <div class="ov ov-crafted" data-autoplay="4200" aria-label="建築工藝輪播">
+            <div class="ov-track">
+              <div class="ov-slide active"><img src="images/yanong-05-1.jpg" alt="崗石豪墅 立面"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-2.jpg" alt="石材工藝細節"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-3.jpg" alt="清水模建築"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-4.jpg" alt="豪邸入口"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-5.jpg" alt="石門柵設計"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-6.jpg" alt="阿罩霧意像"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-7.jpg" alt="夜景立面"/></div>
+              <div class="ov-slide"><img src="images/yanong-05-8.jpg" alt="社區街廓"/></div>
+            </div>
+            <button class="ov-nav prev" aria-label="上一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="ov-nav next" aria-label="下一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="ov-dots"></div>
+          </div>
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-06.jpg" alt="TIMELESS GRACE 限量精品 值得傳承的藝墅典範" loading="lazy" />
+          <div class="ov ov-timeless" data-autoplay="4800" aria-label="居家典範輪播">
+            <div class="ov-track">
+              <div class="ov-slide active"><img src="images/sec-06-1.jpg" alt="客餐廳廚房整合空間"/></div>
+              <div class="ov-slide"><img src="images/sec-06-2.jpg" alt="精品國際配備"/></div>
+              <div class="ov-slide"><img src="images/sec-06-3.jpg" alt="廚具中島"/></div>
+            </div>
+            <button class="ov-nav prev" aria-label="上一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="ov-nav next" aria-label="下一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="ov-dots"></div>
+          </div>
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-07.jpg" alt="ELEVATED LIVING 健康好墅 給下一代的傳家風範" loading="lazy" />
+          <div class="ov ov-elevated" data-autoplay="4600" aria-label="主臥輪播">
+            <div class="ov-track">
+              <div class="ov-slide active"><img src="images/sec-07-1.jpg" alt="主臥房"/></div>
+              <div class="ov-slide"><img src="images/sec-07-2.jpg" alt="主衛浴"/></div>
+              <div class="ov-slide"><img src="images/sec-07-3.jpg" alt="衣帽間"/></div>
+              <div class="ov-slide"><img src="images/sec-07-4.jpg" alt="梯廳"/></div>
+            </div>
+            <button class="ov-nav prev" aria-label="上一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="ov-nav next" aria-label="下一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="ov-dots"></div>
+          </div>
+        </article>
+
+        <article class="block">
+          <img class="edm" src="images/sec-08.jpg" alt="BUILDING YOUR VISION 晴山建設 只蓋值得傳承的崗石好墅" loading="lazy" />
+          <div class="ov ov-building" data-autoplay="5000" aria-label="公司業績輪播">
+            <div class="ov-track">
+              <div class="ov-slide active"><img src="images/sec-08-1.jpg" alt="建築外觀"/></div>
+              <div class="ov-slide"><img src="images/sec-08-2.jpg" alt="景觀庭園"/></div>
+              <div class="ov-slide"><img src="images/sec-08-3.jpg" alt="禪意造境"/></div>
+            </div>
+            <button class="ov-nav prev" aria-label="上一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="ov-nav next" aria-label="下一張"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="ov-dots"></div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============= REAL FUNCTIONAL CONTACT FORM ============= -->
+<section class="form-section" id="contact">
+  <div class="form-wrap">
+    <div class="form-head">
+      <h3>預 約 賞 屋</h3>
+      <div class="sub">Schedule Your Visit</div>
+    </div>
+
+    <!-- Form posts to Formspree. Replace YOUR_FORM_ID with your actual ID. -->
+    <form id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          novalidate>
+      <!-- Optional: Formspree subject line for email notifications -->
+      <input type="hidden" name="_subject" value="【晴山御花園】新的預約賞屋" />
+      <!-- Honeypot for spam protection -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+      <div class="form-field">
+        <label for="f-name">姓 名 <span class="req">*</span></label>
+        <input id="f-name" name="姓名" type="text" placeholder="請輸入您的姓名" required autocomplete="name" />
+        <div class="form-error" data-error-for="f-name"></div>
+      </div>
+
+      <div class="form-field">
+        <label for="f-phone">行 動 電 話 <span class="req">*</span></label>
+        <input id="f-phone" name="行動電話" type="tel" placeholder="0900-000-000" required
+               pattern="[0-9\-\s()]{8,}" autocomplete="tel" inputmode="tel" />
+        <div class="form-error" data-error-for="f-phone"></div>
+      </div>
+
+      <div class="form-field">
+        <label for="f-email">電 子 信 箱</label>
+        <input id="f-email" name="電子信箱" type="email" placeholder="example@mail.com" autocomplete="email" />
+        <div class="form-error" data-error-for="f-email"></div>
+      </div>
+
+      <div class="form-field">
+        <label for="f-msg">內 容</label>
+        <textarea id="f-msg" name="內容" rows="3" placeholder="如有任何問題，歡迎告訴我們"></textarea>
+      </div>
+
+      <div class="form-agree">
+        <label class="cb">
+          <input type="checkbox" name="同意聯絡" value="是" />
+          <span>我同意通過電話，或郵件方式與我聯絡。</span>
+        </label>
+        <p>您所登錄的個人資料將做為以下用途</p>
+        <p>(一) 本網站所載之相關事項通知</p>
+        <p>(二) 客戶管理與服務</p>
+        <p>(三) 本公司行銷業務之推廣　本案實際內容以現場公布為準</p>
+        <p class="priv">請同意個人資料蒐集聲明事項及 <a class="privacy-link" id="openPrivacy">隱私權規範</a></p>
+        <label class="cb">
+          <input type="checkbox" name="個資同意" value="是" required checked />
+          <span>本人已知悉以上個人資料蒐集聲明事項</span>
+        </label>
+        <div class="form-error" data-error-for="agree"></div>
+      </div>
+
+      <button type="submit" class="form-submit" id="submitBtn">送 出</button>
+    </form>
+  </div>
+</section>
+
+<!-- ACTION BUTTONS -->
+<section class="actions">
+  <a class="action-btn" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="粉絲專頁">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/></svg>
+    粉絲專頁
+  </a>
+  <a class="action-btn" href="https://www.google.com/maps/dir/?api=1&destination=霧峰區民生路60號" target="_blank" rel="noopener" aria-label="路徑導航">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L4.5 20.5 12 17l7.5 3.5z"/></svg>
+    路徑導航
+  </a>
+</section>
+
+<!-- GOOGLE MAP -->
+<section class="map-band">
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps?q=%E9%9C%A7%E5%B3%B0%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF60%E8%99%9F&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen
+      title="晴山御花園地圖位置"
+    ></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div>崗石電梯豪墅　|　霧峰正市心　|　全新落成</div>
+  <div>接待中心：霧峰區民生路 60 號　|　預約專線：<a class="gold" href="tel:0423306888">04-2330-6888</a></div>
+  <div style="margin-top:14px; font-size:11px; opacity:0.7;">© 晴山建設 SUNNY MOUNTAIN CONSTRUCTION · RICH GARDEN</div>
+</footer>
+
+<!-- Floating CTA on mobile -->
+<a class="mobile-cta" href="#contact">立即預約賞屋　<span class="ph">04-2330-6888</span></a>
+
+<!-- ============= PRIVACY POLICY MODAL ============= -->
+<div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+  <div class="modal-card">
+    <button class="modal-close" data-close-modal aria-label="關閉">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-eyebrow">Privacy Policy</div>
+    <h3 id="privacyTitle">個人資料保護聲明</h3>
+
+    <p>晴山建設股份有限公司（以下簡稱本公司）非常重視您的個人資料保護及隱私權，本公司依據個人資料保護法及相關法令之規定蒐集、處理及利用您的個人資料，並向您告知下列事項：</p>
+
+    <h4>一、蒐集之目的</h4>
+    <p>(一) 行銷業務之推廣（特別目的：040）<br>
+       (二) 消費者、客戶管理與服務（特別目的：090）<br>
+       (三) 不動產資訊之提供與服務（特別目的：148）<br>
+       (四) 契約、類似契約或其他法律關係事務（特別目的：069）</p>
+
+    <h4>二、蒐集之個人資料類別</h4>
+    <p>姓名、聯絡電話、電子郵件信箱、聯絡地址等識別個人之資料，及其他經您留存之相關訊息。</p>
+
+    <h4>三、個人資料利用之期間、地區、對象及方式</h4>
+    <ol>
+      <li><strong>期間：</strong>個人資料蒐集特定目的存續期間，或本公司執行業務所必須之保存期間，或依相關法令規定之保存期限。</li>
+      <li><strong>地區：</strong>本公司營業所在地之中華民國領域，及前述對象所在地。</li>
+      <li><strong>對象：</strong>本公司及合作之關係企業、行銷合作夥伴、依法有調查權之機關。</li>
+      <li><strong>方式：</strong>合於個人資料保護法相關規定下，得以電腦、書面、電子傳輸、網際網路、傳真、電話或其他自動化機器設備等合法方式蒐集、處理或利用您的個人資料。</li>
+    </ol>
+
+    <h4>四、依個資法第 3 條規定，您就本公司保有您之個人資料得行使下列權利</h4>
+    <ol>
+      <li>查詢或請求閱覽。</li>
+      <li>請求製給複製本。</li>
+      <li>請求補充或更正。</li>
+      <li>請求停止蒐集、處理或利用。</li>
+      <li>請求刪除。</li>
+    </ol>
+    <p>欲行使前述權利，您可與本公司客服聯繫：<br>
+       電話：<a href="tel:0423306888" style="color:var(--c-submit);">04-2330-6888</a><br>
+       地址：霧峰區民生路 60 號</p>
+
+    <h4>五、您不提供資料所致權益之影響</h4>
+    <p>您可自由選擇是否提供個人資料；惟若您拒絕提供相關必要的個人資料，本公司可能無法為您提供特定服務（例如：無法回覆您的賞屋預約申請）。</p>
+
+    <h4>六、同意條款之效力</h4>
+    <p>當您勾選「本人已知悉以上個人資料蒐集聲明事項」並送出表單時，即表示您已閱讀、瞭解並同意接受本聲明之所有內容。本公司有權於必要時修改本聲明內容；修改後之聲明將以網站公告方式通知。</p>
+
+    <div class="modal-actions">
+      <button class="modal-btn" data-close-modal>我 已 了 解</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============= THANK-YOU MODAL ============= -->
+<div class="modal thanks" id="thanksModal" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
+  <div class="modal-card">
+    <button class="modal-close" data-close-modal aria-label="關閉">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="check-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <h3 id="thanksTitle">感 謝 您 的 填 寫</h3>
+    <div class="thanks-msg">
+      我們已經收到您的預約賞屋資訊，<br/>
+      將於最短時間內與您聯繫。<br/>
+      期待與您一同見證晴山御花園的崗石風華。
+    </div>
+    <div class="thanks-tel">
+      <small>專人專線　Private Line</small>
+      <a href="tel:0423306888" style="color:inherit;">04-2330-6888</a>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-btn" data-close-modal>關 閉</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ============================================
+     OVERLAY CAROUSEL CONTROLLER
+  ============================================ */
+  function initCarousel(root) {
+    const slides = Array.from(root.querySelectorAll('.ov-slide'));
+    const dotsEl = root.querySelector('.ov-dots');
+    const prevBtn = root.querySelector('.ov-nav.prev');
+    const nextBtn = root.querySelector('.ov-nav.next');
+    const autoplayMs = parseInt(root.dataset.autoplay || '0', 10);
+    const total = slides.length;
+    if (total <= 1) {
+      if (dotsEl) dotsEl.style.display = 'none';
+      if (prevBtn) prevBtn.style.display = 'none';
+      if (nextBtn) nextBtn.style.display = 'none';
+      return;
+    }
+
+    let idx = 0; let timer = null;
+    if (dotsEl) {
+      dotsEl.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('span');
+        if (i === 0) d.className = 'active';
+        dotsEl.appendChild(d);
+      }
+    }
+    const dots = dotsEl ? Array.from(dotsEl.children) : [];
+    function go(i, manual) {
+      idx = (i + total) % total;
+      slides.forEach((s, n) => s.classList.toggle('active', n === idx));
+      dots.forEach((d, n) => d.classList.toggle('active', n === idx));
+      if (manual) restart();
+    }
+    const next = () => go(idx + 1);
+    const start = () => { if (autoplayMs > 0 && !timer) timer = setInterval(next, autoplayMs); };
+    const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+    const restart = () => { stop(); start(); };
+
+    if (prevBtn) prevBtn.addEventListener('click', () => go(idx - 1, true));
+    if (nextBtn) nextBtn.addEventListener('click', () => go(idx + 1, true));
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) start(); else stop(); });
+    }, { threshold: 0.2 });
+    io.observe(root);
+
+    let sx = 0, dx = 0, sw = false;
+    root.addEventListener('touchstart', (e) => {
+      if (!e.touches[0]) return;
+      sx = e.touches[0].clientX; dx = 0; sw = true; stop();
+    }, { passive: true });
+    root.addEventListener('touchmove', (e) => {
+      if (!sw || !e.touches[0]) return;
+      dx = e.touches[0].clientX - sx;
+    }, { passive: true });
+    root.addEventListener('touchend', () => {
+      if (!sw) return; sw = false;
+      if (Math.abs(dx) > 36) go(idx + (dx < 0 ? 1 : -1), true);
+      else start();
+    });
+
+    start();
+  }
+  document.querySelectorAll('.ov').forEach(initCarousel);
+
+  /* SCROLL REVEAL */
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  /* ============================================
+     MODAL CONTROLS
+  ============================================ */
+  function openModal(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modalEl) {
+    modalEl.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  // Privacy link opens privacy modal
+  const privacyLink = document.getElementById('openPrivacy');
+  if (privacyLink) {
+    privacyLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('privacyModal');
+    });
+  }
+  // Any [data-close-modal] inside a modal closes its parent
+  document.querySelectorAll('[data-close-modal]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const m = btn.closest('.modal');
+      if (m) closeModal(m);
+    });
+  });
+  // Click on backdrop closes
+  document.querySelectorAll('.modal').forEach(m => {
+    m.addEventListener('click', (e) => { if (e.target === m) closeModal(m); });
+  });
+  // ESC closes any open modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.open').forEach(closeModal);
+    }
+  });
+
+  /* ============================================
+     CONTACT FORM — Formspree submit + GTM event
+  ============================================ */
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+
+  function setError(name, message) {
+    const el = form.querySelector(`[data-error-for="${name}"]`);
+    if (el) el.textContent = message || '';
+  }
+  function clearAllErrors() {
+    form.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+  }
+
+  function validate(form) {
+    clearAllErrors();
+    let valid = true;
+    const name = form.querySelector('#f-name').value.trim();
+    const phone = form.querySelector('#f-phone').value.trim();
+    const email = form.querySelector('#f-email').value.trim();
+    const agree = form.querySelector('input[name="個資同意"]').checked;
+
+    if (!name) { setError('f-name', '請輸入姓名'); valid = false; }
+    if (!phone) {
+      setError('f-phone', '請輸入行動電話');
+      valid = false;
+    } else if (!/^[0-9\-\s()]{8,}$/.test(phone)) {
+      setError('f-phone', '行動電話格式不正確');
+      valid = false;
+    }
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError('f-email', '電子信箱格式不正確');
+      valid = false;
+    }
+    if (!agree) {
+      setError('agree', '請先閱讀並同意個人資料蒐集聲明事項');
+      valid = false;
+    }
+    return valid;
+  }
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!validate(form)) return;
+
+      submitBtn.disabled = true;
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = '送 出 中…';
+
+      const data = new FormData(form);
+
+      // GTM event: form_submit_attempt
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'form_submit_attempt',
+        form_name: 'rich_garden_inquiry',
+        form_location: 'contact_section'
+      });
+
+      try {
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+          // Success
+          window.dataLayer.push({
+            event: 'form_submit_success',
+            form_name: 'rich_garden_inquiry',
+            form_location: 'contact_section'
+          });
+          // Optional standard GA4 generate_lead event
+          window.dataLayer.push({
+            event: 'generate_lead',
+            currency: 'TWD',
+            value: 0
+          });
+
+          form.reset();
+          // Restore the default-checked checkbox
+          const agreeCb = form.querySelector('input[name="個資同意"]');
+          if (agreeCb) agreeCb.checked = true;
+          openModal('thanksModal');
+        } else {
+          let msg = '送出失敗，請稍後再試或直接來電 04-2330-6888';
+          try {
+            const r = await resp.json();
+            if (r && r.errors && r.errors.length) {
+              msg = r.errors.map(x => x.message).join('、');
+            }
+          } catch (_) {}
+          window.dataLayer.push({
+            event: 'form_submit_error',
+            form_name: 'rich_garden_inquiry',
+            error_message: msg
+          });
+          alert(msg);
+        }
+      } catch (err) {
+        window.dataLayer.push({
+          event: 'form_submit_error',
+          form_name: 'rich_garden_inquiry',
+          error_message: err && err.message ? err.message : 'network_error'
+        });
+        alert('網路連線異常，請稍後再試或直接來電 04-2330-6888');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
