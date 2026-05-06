@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 上架後請將下面的 sitemap 路徑換成您實際的網域
+# Sitemap: https://your-domain.com.tw/sitemap.xml
